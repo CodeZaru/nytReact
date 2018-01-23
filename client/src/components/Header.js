@@ -4,11 +4,12 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => (
     <div>
+    <div style={{ backgroundImage: 'url(./jumbo.jpg)' }}>
         <Jumbotron className="text-center"  style={{ backgroundImage: 'url(./jumbo.jpg)' }}>
             <h1>NYT Article Search</h1>
             <p>Search for and save articles of interest</p>
         </Jumbotron>
-    
+    </div>
         <Nav bsStyle="tabs">
             <LinkContainer exact to="/">
                 <NavItem>Search for Articles</NavItem>
