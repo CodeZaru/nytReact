@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => (
     <div>
-  <div className="imageTest" style={{ backgroundImage: 'url(http://i.telegraph.co.uk/multimedia/archive/01946/new-york-times_1946907c.jpg)' }}></div>
+  <div className="imageTest2" style={{ backgroundImage: 'url(http://i.telegraph.co.uk/multimedia/archive/01946/new-york-times_1946907c.jpg)' }}></div>
     
     <div className="imageTest" style={{ backgroundImage: 'url(http://i.telegraph.co.uk/multimedia/archive/01946/new-york-times_1946907c.jpg)' }}>
         <Jumbotron className="text-center" style={{ backgroundImage: 'url(https://shroudofturin.files.wordpress.com/2015/03/image25.png)' }}>
