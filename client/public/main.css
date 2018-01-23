@@ -1,0 +1,59 @@
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+
+.favorite {
+    font-size: 30px;
+}
+
+.favorite:hover {
+    cursor: pointer;
+}
+
+.fav-ic-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.article-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-thumbnail {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.my-jumbotron {
+    height: 400px;
+    background-image: url('./img/jumbo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 800px) {
+    .article-container {
+        flex-direction: column;
+    }
+}
