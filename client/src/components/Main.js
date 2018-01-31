@@ -59,6 +59,15 @@ class Main extends Component {
         }
     }
 
+     toggleColor(domObj) {
+        {
+      if(this.style.backgroundColor==="white")
+           this.style.backgroundColor="green";
+      else if(this.style.backgroundColor==="green")
+           this.style.backgroundColor=domObj.className;
+   }
+}
+
     saveArticle(article) {
         API.saveArticle(article).then(res => {
             if (res.data.status === 'error') {

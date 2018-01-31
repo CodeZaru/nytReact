@@ -7,7 +7,7 @@ const ArticleList = props => (
         {
         props.articles.length > 0 &&
             <Col xs={12}>
-                <Panel>
+                <Panel style={{backgroundColor: "#585B55"}}>
                     <h2>Search Results</h2>
                     { props.articles.map(article => (
                         <Article

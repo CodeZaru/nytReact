@@ -1,9 +1,11 @@
 import React from 'react';
+import { render } from 'react-dom'
+import Ionicon from 'react-ionicons'
 import { Panel, Row, Col } from 'react-bootstrap';
 
 const Article = props => (
     <Row className="ml-20 mr-20">
-        <Panel>
+        <Panel style={{backgroundColor: "#CBCBAB"}}>
             <Col xs={10} sm={11}>
                 <div className="article-container">
                     <div className="article-thumbnail">
@@ -18,7 +20,13 @@ const Article = props => (
                 </div>
             </Col>
             <Col xs={2} sm={1} className="fav-ic-container">
-                <span onClick={() => props.saveArticle(props.article)} className="ion-android-favorite-outline favorite"></span>
+                             <div className="searchToggleColor" style={{backgroundColor: "white"}}>   
+                <span onClick={() => props.saveArticle(props.article)}>
+                <Ionicon icon="md-star-outline" rotate={true} fontSize="35px"
+                    onClick={() => this.color="green"}  
+                />                
+                </span>
+                </div>
             </Col>
         </Panel>
     </Row>

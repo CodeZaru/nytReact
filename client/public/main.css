@@ -43,6 +43,17 @@
     padding-right: 10px;
 }
 
+.searchToggleColor:hover {
+    cursor: pointer;
+}
+
+.green {
+    background:green;
+}
+
+.white {
+    background: white;    
+}
 
 .imageTest {
     height: 650px;

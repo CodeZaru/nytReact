@@ -3,7 +3,7 @@ import { Form, FormGroup, FormControl, ControlLabel, Button, Col, Panel } from '
 
 const SearchForm = props => (
     <Col xs={12}>
-        <Panel>
+        <Panel style={{backgroundColor: "#585B55"}}>
             <Form horizontal>
                 <FormGroup controlId="searchTerm" validationState={props.validation}>
                     <Col componentClass={ControlLabel} sm={2}>

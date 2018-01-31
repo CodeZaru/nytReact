@@ -9,10 +9,23 @@ const PORT = process.env.PORT || 3001;
 mongoose.Promise = global.Promise;
 let app = express();
 
-const PRODUCTION_KEY = 'mongodb://heroku_lvz08h74:36f760b8r53jvhgq5icj1aaq9u@ds111478.mlab.com:11478/heroku_lvz08h74';
-const DEV_KEY = 'mongodb://localhost/newyorktimesdb';
+const PRODUCTION_KEY = require('./client/src/config/mongoDB/db_config');
 
-mongoose.connect(PRODUCTION_KEY);
+const DEV_KEY = 'mongodb://localhost/saveSchema';
+
+///////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+//Toggle NODE_ENV by commenting out the two lines of code below depending on desired ENV/to switch between Prod vs Devl/Local
+process.env.NODE_ENV = 'production';
+//process.env.NODE_ENV = 'development';
+
+if (process.env.NODE_ENV === 'production') {
+    mongoose.connect(PRODUCTION_KEY);
+} else {
+    mongoose.connect("mongodb://localhost/saveSchema", {
+  	useMongoClient: true
+	});
+}
 
 let db = mongoose.connection;
 
