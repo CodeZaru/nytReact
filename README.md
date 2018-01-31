@@ -16,8 +16,13 @@
 
 
 ### Instructions:
+
 *Start local Mongo db, or generate Mongo URI KEY for heroku deployment and in the server.js file set the const PRODUCTION_KEY = your Mongo URI Key (in place of the code that says: require('./client/src/config/mongoDB/db_config');).  ALSO, in the server.js file, see comment: //Toggle NODE_ENV by commenting out the two lines of code
+
 *Get your API Key from NYT and include it as appropriate.  Paste it in the API.js file in the utils directory setting the const API_KEY = to you API key (in place of the code that says: require('../config/nytApiKey/nytApiKey')).
+
 *Run npm install (as needed) and then npm start for the Express server from the main app directory: \nytReact>npm start
+
 *Also run npm start for the react client svr: \nytReact\client>npm start
+
 *the app should open up automatically in your browser.
